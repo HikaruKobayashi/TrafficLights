@@ -1,0 +1,96 @@
+body {
+  display: flex;
+  flex-wrap: wrap;
+  font-family: Meiryo, sans-serif;
+  width: 950px;
+  height: 600px;
+}
+p {
+  font-size: 7px;
+  font-weight: bold;
+  text-align:center;
+  color: rgb(255,0,0);
+  user-select: none;
+}
+.instructionTop,
+.instructionEnd {
+  width: 100px;
+  height: 40px;
+  border-radius: 5px;
+  background: rgb(0,0,0);
+  user-select: none;
+  line-height: 40px;
+}
+.instructionTop{
+  margin:25px;
+}
+.instructionEnd {
+  margin: 120px 25px 0px;
+}
+
+#body {
+  width: 700px;
+  height: 280px;
+  background: rgb(192,192,192);
+  border-radius: 50px;
+}
+#blue,
+#yellow,
+#red {
+  width: 200px;
+  height: 200px;
+  border-top: 10px solid rgb(85, 85, 85);
+  border-radius: 50%;
+  line-height: 200px;
+  user-select: none;
+  float: left;
+  margin: 35px 10px;
+}
+#blue {
+  background-color: rgba(0, 85, 255, 0.6);
+}
+#yellow {
+  background-color: rgba(204, 187, 0, 0.6);
+}
+#red {
+  background-color: rgba(230, 0, 0, 0.6);
+}
+#body[light="blue"] #blue {
+  background: rgb(0,0,255);
+}
+#body[light="yellow"] #yellow {
+  background: rgb(255,255,0);
+}
+#body[light="red"] #red {
+  background: rgb(255,0,0);
+}
+
+.buttonBody {
+  width: 150px;
+  height: 250px;
+  background: rgb(255,213,0);
+  border-radius: 10px 10px 5px 5px;
+  margin: auto;
+}
+#button {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: rgb(255,0,0);
+  cursor: pointer;
+  margin: 5px 45px;
+  box-shadow: 0 3px 0 rgb(220,0,0);
+  position: fixed;
+}
+#button.press {
+  margin: 8px 45px 0px;;
+  box-shadow: 0 1px 0 rgb(220,0,0);
+}
+#wait,
+#push.hide {
+  opacity: 0;
+}
+#wait.show,
+#push {
+  opacity: 1;
+}
