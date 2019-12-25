@@ -11,9 +11,8 @@
 → ブラウザに`index.html`ファイルをドラッグ&ドロップする。
 
 もしくは、
-`cd TrafficLights`
-
-`open index.html`
+`cd TrafficLights`で対象のディレクトリに移動し
+`open index.html`を実行する。
 
 # 遊び方
 
