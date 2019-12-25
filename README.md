@@ -10,6 +10,11 @@
 
 → ブラウザに`index.html`ファイルをドラッグ&ドロップする。
 
+もしくは、
+`cd TrafficLights`
+
+`open index.html`
+
 # 遊び方
 
 1. 赤いボタンをクリックしてください。
